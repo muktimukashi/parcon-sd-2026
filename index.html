@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sosialisasi Orang Tua — Google Workspace Sekolah</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="text-white">
+
+<div id="app" class="h-full w-full relative overflow-hidden">
+
+  <div id="overlay" onclick="closeSidebar()" class="fixed inset-0 bg-slate-950/60 opacity-0 pointer-events-none transition z-40"></div>
+
+  <aside id="sidebar" class="fixed z-50 left-0 top-0 h-full w-80 max-w-[86vw] bg-slate-950/95 border-r border-white/10 -translate-x-full transition-transform duration-300">
+    <div class="flex items-center justify-between p-5 border-b border-white/10">
+      <div>
+        <p class="text-xs uppercase tracking-[.28em] text-sky-300">Sosialisasi Sekolah</p>
+        <h2 class="font-black text-xl mt-1">Google Workspace</h2>
+      </div>
+      <button onclick="closeSidebar()" class="h-10 w-10 rounded-xl bg-white/10 hover:bg-white/20 text-xl">✕</button>
+    </div>
+    <div id="navList" class="p-4 space-y-2 overflow-y-auto h-[calc(100%-86px)]"></div>
+  </aside>
+
+  <header class="fixed z-30 top-0 left-0 right-0 p-4 md:p-5 flex items-center justify-between">
+    <button onclick="openSidebar()" class="glass rounded-2xl px-4 py-3 font-bold hover:bg-white/20 transition">☰ <span class="hidden sm:inline">Navigasi</span></button>
+    <div class="flex items-center gap-3">
+      <div class="hidden md:flex items-center gap-2 glass rounded-full px-4 py-2 text-sm">
+        <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 pulse-dot"></span>
+        Google Workspace
+      </div>
+      <button onclick="toggleFullscreen()" class="glass rounded-2xl px-4 py-3 hover:bg-white/20">⛶</button>
+    </div>
+  </header>
+
+  <main id="slides" class="h-full w-full">
+
+    <section class="slide active h-full w-full items-center justify-center bg-gradient-to-br from-blue-700 via-sky-500 to-emerald-400 p-6">
+      <div class="max-w-6xl w-full grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <div class="inline-flex items-center gap-2 glass rounded-full px-4 py-2 text-sm mb-5">👨‍👩‍👧 Panduan Singkat Orang Tua</div>
+          <h1 class="text-5xl md:text-7xl font-black leading-tight">Akun Google<br><span class="text-yellow-200">Workspace Sekolah</span></h1>
+          <p class="text-xl md:text-2xl mt-5 text-white/90">Cara mengaktifkan akun anak dan mulai bergabung ke Google Classroom.</p>
+          <div class="mt-8 flex flex-wrap gap-3 text-sm">
+            <span class="glass px-4 py-2 rounded-xl">📧 Gmail Sekolah</span>
+            <span class="glass px-4 py-2 rounded-xl">🏫 Classroom</span>
+            <span class="glass px-4 py-2 rounded-xl">🔐 Aman</span>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="bg-white text-slate-900 rounded-[2rem] p-6 soft-shadow rotate-2 floaty">
+            <div class="flex gap-2 mb-5"><span class="w-3 h-3 bg-red-400 rounded-full"></span><span class="w-3 h-3 bg-yellow-300 rounded-full"></span><span class="w-3 h-3 bg-green-400 rounded-full"></span></div>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="rounded-3xl bg-blue-50 p-6 text-center"><div class="text-5xl">📧</div><p class="font-black mt-3">Gmail</p></div>
+              <div class="rounded-3xl bg-emerald-50 p-6 text-center"><div class="text-5xl">📁</div><p class="font-black mt-3">Drive</p></div>
+              <div class="rounded-3xl bg-yellow-50 p-6 text-center"><div class="text-5xl">🏫</div><p class="font-black mt-3">Classroom</p></div>
+              <div class="rounded-3xl bg-rose-50 p-6 text-center"><div class="text-5xl">🎥</div><p class="font-black mt-3">Meet</p></div>
+            </div>
+          </div>
+          <div class="absolute -bottom-6 -left-6 glass rounded-2xl p-4 rotate-[-6deg]">✨ Belajar lebih tertib</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide h-full w-full items-center justify-center bg-gradient-to-br from-violet-700 via-fuchsia-600 to-orange-400 p-6">
+      <div class="max-w-6xl grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <p class="uppercase tracking-[.35em] text-violet-100 text-sm">Tujuan</p>
+          <h2 class="text-5xl md:text-7xl font-black mt-4">Kenapa memakai akun sekolah?</h2>
+          <p class="text-2xl mt-6 leading-relaxed">Karena akun ini dipakai khusus untuk kegiatan belajar, informasi resmi, dan tugas sekolah.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-5">
+          <div class="glass rounded-3xl p-8 text-center pop"><div class="text-6xl">🛡️</div><h3 class="text-xl font-black mt-4">Lebih Aman</h3><p class="text-white/75 mt-2">Akun dibuat dan dikelola oleh sekolah sehingga lebih aman digunakan untuk belajar.</p></div>
+          <div class="glass rounded-3xl p-8 text-center pop" style="animation-delay:.1s"><div class="text-6xl">📚</div><h3 class="text-xl font-black mt-4">Semua Belajar di Satu Tempat</h3><p class="text-white/75 mt-2">Materi, tugas, dan pengumuman dari guru ada di Google Classroom sehingga tidak mudah hilang.</p></div>
+          <div class="glass rounded-3xl p-8 text-center pop" style="animation-delay:.2s"><div class="text-6xl">💬</div><h3 class="text-xl font-black mt-4">Informasi Lebih Jelas</h3><p class="text-white/75 mt-2">Guru dapat mengirim pengumuman, materi, dan tugas langsung ke akun siswa tanpa tercampur dengan akun pribadi.</p></div>
+          <div class="glass rounded-3xl p-8 text-center pop" style="animation-delay:.3s"><div class="text-6xl">✅</div><h3 class="text-xl font-black mt-4">Orang Tua Lebih Mudah Mendampingi</h3><p class="text-white/75 mt-2">Orang tua dapat mengingatkan anak untuk membuka Classroom dan memastikan tugas sudah dikerjakan serta dikumpulkan tepat waktu.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide h-full w-full items-center justify-center bg-gradient-to-br from-sky-500 to-indigo-700 p-6">
+      <div class="max-w-5xl text-center">
+        <p class="uppercase tracking-[.35em] text-sky-100 text-sm">Gambaran Sederhana</p>
+        <h2 class="text-4xl md:text-6xl font-black mt-4">Akun sekolah dipakai untuk belajar online</h2>
+        <div class="mt-12 flex flex-col md:flex-row items-center justify-center gap-4 text-xl font-bold">
+          <div class="bg-white text-slate-900 rounded-3xl px-8 py-6 soft-shadow">🔑 Akun Sekolah</div>
+          <div class="text-4xl">→</div>
+          <div class="bg-white text-slate-900 rounded-3xl px-8 py-6 soft-shadow">🏫 Classroom</div>
+          <div class="text-4xl">→</div>
+          <div class="bg-yellow-300 text-slate-900 rounded-3xl px-8 py-6 soft-shadow">📚 Materi & Tugas</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide h-full w-full items-center justify-center bg-gradient-to-br from-emerald-500 to-teal-800 p-6">
+      <div class="max-w-6xl w-full">
+        <p class="uppercase tracking-[.3em] text-emerald-100 text-sm text-center">Aktivasi Akun</p>
+        <h2 class="text-5xl md:text-6xl font-black text-center mt-3">4 Langkah Mengaktifkan Akun</h2>
+        <div class="grid md:grid-cols-4 gap-5 mt-12">
+          <div class="bg-white text-slate-900 rounded-3xl p-7 soft-shadow"><div class="text-5xl">🌐</div><p class="font-black text-xl mt-3">1. Buka Google</p><p class="text-slate-500 mt-2">accounts.google.com atau Gmail</p></div>
+          <div class="bg-white text-slate-900 rounded-3xl p-7 soft-shadow"><div class="text-5xl">📧</div><p class="font-black text-xl mt-3">2. Masukkan Email</p><p class="text-slate-500 mt-2">Gunakan email sekolah</p></div>
+          <div class="bg-white text-slate-900 rounded-3xl p-7 soft-shadow"><div class="text-5xl">🔁</div><p class="font-black text-xl mt-3">3. Ganti Password</p><p class="text-slate-500 mt-2">Buat yang aman</p></div>
+          <div class="bg-white text-slate-900 rounded-3xl p-7 soft-shadow"><div class="text-5xl">🔐</div><p class="font-black text-xl mt-3">4. Simpan</p><p class="text-slate-500 mt-2">Jangan dibagikan</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide h-full w-full items-center justify-center bg-slate-900 p-6">
+      <div class="max-w-6xl w-full grid lg:grid-cols-2 gap-8 items-center">
+        <div>
+          <p class="text-sky-300 uppercase tracking-[.3em] text-sm">Contoh Tampilan</p>
+          <h2 class="text-5xl md:text-6xl font-black mt-3">Pastikan akun yang dipakai benar</h2>
+          <p class="text-xl text-slate-300 mt-5">Gunakan akun sekolah, bukan akun Gmail pribadi.</p>
+          <div class="mt-8 space-y-3">
+            <div class="glass rounded-2xl px-5 py-4">✅ nama.siswa@sd-semutsemut.sch.id</div>
+            <div class="glass rounded-2xl px-5 py-4">⚠️ Hindari memakai akun pribadi anak/orang tua</div>
+            <div class="glass rounded-2xl px-5 py-4">🔐 Password cukup diketahui anak dan orang tua</div>
+          </div>
+        </div>
+        <div class="mx-auto bg-slate-950 rounded-[2.4rem] p-4 soft-shadow border border-white/10 w-[310px]">
+          <div class="phone-screen rounded-[1.8rem] p-5 min-h-[520px] text-slate-900">
+            <div class="w-16 h-1.5 bg-slate-300 rounded-full mx-auto mb-7"></div>
+            <div class="text-center text-5xl mb-4">🔐</div>
+            <h3 class="font-black text-2xl text-center">Login Akun Sekolah</h3>
+            <div class="mt-7 space-y-4">
+              <div class="bg-white rounded-2xl p-4 shadow"><p class="text-xs text-slate-500">Email</p><p class="font-bold">nama.siswa@sd-semutsemut.sch.id</p></div>
+              <div class="bg-white rounded-2xl p-4 shadow"><p class="text-xs text-slate-500">Password</p><p class="font-bold">••••••••••</p></div>
+              <div class="bg-blue-600 text-white rounded-2xl p-4 text-center font-black">Masuk</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide h-full w-full items-center justify-center bg-gradient-to-br from-orange-400 to-pink-600 p-6">
+      <div class="max-w-5xl w-full text-center">
+        <h2 class="text-5xl md:text-6xl font-black">Apa itu Google Classroom? 🏫</h2>
+        <p class="text-2xl mt-5 text-white/90">Classroom adalah kelas online tempat guru membagikan informasi, materi, dan tugas.</p>
+        <div class="grid md:grid-cols-3 gap-5 mt-12">
+          <div class="bg-white text-slate-900 rounded-3xl p-8 soft-shadow"><div class="text-6xl">📢</div><h3 class="text-2xl font-black mt-4">Pengumuman</h3></div>
+          <div class="bg-white text-slate-900 rounded-3xl p-8 soft-shadow"><div class="text-6xl">📖</div><h3 class="text-2xl font-black mt-4">Materi</h3></div>
+          <div class="bg-white text-slate-900 rounded-3xl p-8 soft-shadow"><div class="text-6xl">📤</div><h3 class="text-2xl font-black mt-4">Tugas</h3></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide h-full w-full items-center justify-center bg-gradient-to-br from-indigo-600 to-violet-900 p-6">
+      <div class="max-w-5xl w-full text-center">
+        <h2 class="text-5xl md:text-6xl font-black">Cara Join Google Classroom</h2>
+        <div class="mt-10 bg-white text-slate-900 rounded-[2rem] p-8 soft-shadow text-left">
+          <div class="grid md:grid-cols-2 gap-5">
+            <div class="rounded-3xl bg-sky-50 p-6"><p class="text-3xl">1️⃣</p><h3 class="text-2xl font-black mt-2">Buka Classroom</h3><p class="text-slate-500 mt-2">classroom.google.com</p></div>
+            <div class="rounded-3xl bg-emerald-50 p-6"><p class="text-3xl">2️⃣</p><h3 class="text-2xl font-black mt-2">Pilih akun sekolah</h3><p class="text-slate-500 mt-2">Jangan akun pribadi</p></div>
+            <div class="rounded-3xl bg-yellow-50 p-6"><p class="text-3xl">3️⃣</p><h3 class="text-2xl font-black mt-2">Klik tombol +</h3><p class="text-slate-500 mt-2">Pilih “Gabung ke Kelas”</p></div>
+            <div class="rounded-3xl bg-rose-50 p-6"><p class="text-3xl">4️⃣</p><h3 class="text-2xl font-black mt-2">Masukkan kode</h3><p class="text-slate-500 mt-2">Klik “Gabung”</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide h-full w-full items-center justify-center bg-gradient-to-br from-cyan-500 to-blue-800 p-6">
+      <div class="max-w-6xl grid lg:grid-cols-2 gap-10 items-center">
+        <div class="text-center">
+          <div class="text-[9rem] floaty">📤</div>
+          <p class="text-3xl font-black">Tugas Anak</p>
+        </div>
+        <div>
+          <h2 class="text-5xl md:text-6xl font-black">Cara mengecek tugas</h2>
+          <div class="mt-8 space-y-4 text-xl font-bold">
+            <div class="bg-white text-slate-900 rounded-3xl px-7 py-5 soft-shadow">1. Buka menu Tugas Kelas</div>
+            <div class="bg-white text-slate-900 rounded-3xl px-7 py-5 soft-shadow">2. Baca instruksi guru</div>
+            <div class="bg-white text-slate-900 rounded-3xl px-7 py-5 soft-shadow">3. Pastikan sudah klik “Serahkan”</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide h-full w-full items-center justify-center bg-gradient-to-br from-lime-400 to-emerald-700 p-6">
+      <div class="max-w-6xl w-full grid lg:grid-cols-2 gap-8 items-center">
+        <div>
+          <p class="uppercase tracking-[.3em] text-emerald-950/70 text-sm">Peran Orang Tua</p>
+          <h2 class="text-5xl md:text-6xl font-black text-emerald-950 mt-3">Peran orang tua di rumah</h2>
+          <p class="text-xl text-emerald-950/80 mt-5">Bantu anak memakai akun sekolah dan mengecek Classroom secara rutin.</p>
+        </div>
+        <div class="bg-slate-950 rounded-3xl p-7 text-lg leading-relaxed soft-shadow">
+          <p class="text-2xl font-black text-yellow-300 mb-4">Checklist di rumah</p>
+          <div class="space-y-4">
+            <p>✅ Anak memakai akun sekolah</p>
+            <p>✅ Classroom dicek secara rutin</p>
+            <p>✅ Password tidak dibagikan</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="slide h-full w-full items-center justify-center bg-gradient-to-br from-violet-700 via-fuchsia-600 to-yellow-400 p-6">
+      <div class="max-w-5xl w-full text-center">
+        <div class="text-8xl floaty">🤝</div>
+        <h2 class="text-5xl md:text-7xl font-black mt-5">Terima Kasih</h2>
+        <p class="text-2xl mt-4">Mari bersama mendampingi anak belajar secara aman dan positif.</p>
+        <div class="grid md:grid-cols-3 gap-3 mt-10 text-left">
+          <div class="glass rounded-2xl p-4">✅ Akun aktif</div>
+          <div class="glass rounded-2xl p-4">✅ Join Classroom</div>
+          <div class="glass rounded-2xl p-4">✅ Tugas terpantau</div>
+        </div>
+        <button onclick="celebrate()" class="mt-8 bg-slate-950 hover:bg-slate-800 px-7 py-4 rounded-2xl font-black text-lg">🎉 Selesai</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="fixed z-30 bottom-0 left-0 right-0 p-4 md:p-5">
+    <div class="max-w-6xl mx-auto flex items-center gap-3">
+      <button onclick="prevSlide()" class="glass rounded-2xl px-4 py-3 hover:bg-white/20">←</button>
+      <div class="flex-1">
+        <div class="h-2 rounded-full bg-white/20 overflow-hidden"><div id="progress" class="h-full bg-yellow-300 transition-all duration-300"></div></div>
+      </div>
+      <span id="counter" class="glass rounded-2xl px-4 py-3 text-sm min-w-[76px] text-center">1 / 10</span>
+      <button onclick="nextSlide()" class="glass rounded-2xl px-4 py-3 hover:bg-white/20">→</button>
+    </div>
+  </footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
