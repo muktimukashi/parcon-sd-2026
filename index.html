@@ -66,17 +66,16 @@
     </section>
 
     <section class="slide h-full w-full items-center justify-center bg-gradient-to-br from-violet-700 via-fuchsia-600 to-orange-400 p-6">
-      <div class="max-w-6xl grid lg:grid-cols-2 gap-10 items-center">
-        <div>
+      <div class="max-w-6xl w-full">
+        <div class="text-center max-w-4xl mx-auto">
           <p class="uppercase tracking-[.35em] text-violet-100 text-sm">Tujuan</p>
           <h2 class="text-5xl md:text-7xl font-black mt-4">Kenapa memakai akun sekolah?</h2>
           <p class="text-2xl mt-6 leading-relaxed">Karena akun ini dipakai khusus untuk kegiatan belajar, informasi resmi, dan tugas sekolah.</p>
         </div>
-        <div class="grid grid-cols-2 gap-5">
+        <div class="grid md:grid-cols-3 gap-5 mt-12">
           <div class="glass rounded-3xl p-8 text-center pop"><div class="text-6xl">🛡️</div><h3 class="text-xl font-black mt-4">Lebih Aman</h3><p class="text-white/75 mt-2">Akun dibuat dan dikelola oleh sekolah sehingga lebih aman digunakan untuk belajar.</p></div>
           <div class="glass rounded-3xl p-8 text-center pop" style="animation-delay:.1s"><div class="text-6xl">📚</div><h3 class="text-xl font-black mt-4">Semua Belajar di Satu Tempat</h3><p class="text-white/75 mt-2">Materi, tugas, dan pengumuman dari guru ada di Google Classroom sehingga tidak mudah hilang.</p></div>
           <div class="glass rounded-3xl p-8 text-center pop" style="animation-delay:.2s"><div class="text-6xl">💬</div><h3 class="text-xl font-black mt-4">Informasi Lebih Jelas</h3><p class="text-white/75 mt-2">Guru dapat mengirim pengumuman, materi, dan tugas langsung ke akun siswa tanpa tercampur dengan akun pribadi.</p></div>
-          <div class="glass rounded-3xl p-8 text-center pop" style="animation-delay:.3s"><div class="text-6xl">✅</div><h3 class="text-xl font-black mt-4">Orang Tua Lebih Mudah Mendampingi</h3><p class="text-white/75 mt-2">Orang tua dapat mengingatkan anak untuk membuka Classroom dan memastikan tugas sudah dikerjakan serta dikumpulkan tepat waktu.</p></div>
         </div>
       </div>
     </section>
@@ -108,6 +107,26 @@
       </div>
     </section>
 
+
+    <section class="slide h-full w-full items-center justify-center bg-gradient-to-br from-amber-400 to-rose-600 p-6">
+      <div class="max-w-6xl w-full">
+        <div class="text-center max-w-4xl mx-auto">
+          <p class="uppercase tracking-[.3em] text-amber-100 text-sm">Catatan Login</p>
+          <h2 class="text-5xl md:text-6xl font-black mt-3">Sebelum menambahkan akun sekolah</h2>
+        </div>
+        <div class="grid md:grid-cols-2 gap-5 mt-10">
+          <div class="bg-white text-slate-900 rounded-3xl p-7 soft-shadow md:col-span-2">
+            <div class="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-slate-900 text-white text-2xl font-black">1</div>
+            <h3 class="text-2xl font-black mt-3">Aktifkan kunci layar HP</h3>
+            <p class="text-slate-600 text-lg mt-2">Gunakan PIN, pola, sidik jari, atau Face Unlock. Di beberapa HP, akun sekolah tidak bisa aktif kalau perangkat belum memakai kunci layar.</p>
+          </div>
+          <div class="bg-white text-slate-900 rounded-3xl p-6 soft-shadow"><div class="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-blue-600 text-white text-xl font-black">2</div><p class="font-black text-xl mt-3">Cek email dan password</p><p class="text-slate-500 mt-2">Pastikan tidak salah ketik.</p></div>
+          <div class="bg-white text-slate-900 rounded-3xl p-6 soft-shadow"><div class="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-600 text-white text-xl font-black">3</div><p class="font-black text-xl mt-3">Gunakan akun sekolah anak</p><p class="text-slate-500 mt-2">Jangan memakai akun pribadi.</p></div>
+          <div class="bg-white text-slate-900 rounded-3xl p-6 soft-shadow"><div class="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-violet-600 text-white text-xl font-black">4</div><p class="font-black text-xl mt-3">Simpan password</p><p class="text-slate-500 mt-2">Jangan dibagikan ke teman atau grup.</p></div>
+          <div class="bg-white text-slate-900 rounded-3xl p-6 soft-shadow"><div class="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-rose-600 text-white text-xl font-black">5</div><p class="font-black text-xl mt-3">Jika gagal login</p><p class="text-slate-500 mt-2">Cek internet, email, password, serta tanggal dan jam HP.</p></div>
+        </div>
+      </div>
+    </section>
     <section class="slide h-full w-full items-center justify-center bg-slate-900 p-6">
       <div class="max-w-6xl w-full grid lg:grid-cols-2 gap-8 items-center">
         <div>
@@ -219,7 +238,7 @@
       <div class="flex-1">
         <div class="h-2 rounded-full bg-white/20 overflow-hidden"><div id="progress" class="h-full bg-yellow-300 transition-all duration-300"></div></div>
       </div>
-      <span id="counter" class="glass rounded-2xl px-4 py-3 text-sm min-w-[76px] text-center">1 / 10</span>
+      <span id="counter" class="glass rounded-2xl px-4 py-3 text-sm min-w-[76px] text-center">1 / 11</span>
       <button onclick="nextSlide()" class="glass rounded-2xl px-4 py-3 hover:bg-white/20">→</button>
     </div>
   </footer>
@@ -227,6 +246,13 @@
 <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
 
 
 

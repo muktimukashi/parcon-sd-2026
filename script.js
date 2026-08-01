@@ -1,7 +1,7 @@
 const slides = [...document.querySelectorAll('.slide')];
 let current = 0;
 const titles = [
-  'Cover','Kenapa Akun Sekolah?','Belajar Online','Aktivasi Akun','Pastikan Akun Benar',
+  'Cover','Kenapa Akun Sekolah?','Belajar Online','Aktivasi Akun','Catatan Login','Pastikan Akun Benar',
   'Apa itu Classroom?','Cara Join Classroom','Cek Tugas','Peran Orang Tua','Penutup'
 ];
 
@@ -52,4 +52,5 @@ function celebrate(){
   }
 }
 update();
+
 
