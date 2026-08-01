@@ -1,8 +1,8 @@
 const slides = [...document.querySelectorAll('.slide')];
 let current = 0;
 const titles = [
-  'Cover','Kenapa Akun Sekolah?','Belajar Online','Aktivasi Akun','Catatan Login','Pastikan Akun Benar',
-  'Apa itu Classroom?','Cara Join Classroom','Cek Tugas','Peran Orang Tua','Penutup'
+  'Cover','Kenapa Akun Sekolah?','Belajar Online','Pastikan Akun Benar','Aktivasi Akun','Catatan Login','Aktivasi Email 1','Aktivasi Email 2',
+  'Apa itu Classroom?','Cara Join Classroom','Screenshot Join','Cek Tugas','Peran Orang Tua','Penutup'
 ];
 
 function renderNav(){
@@ -52,5 +52,8 @@ function celebrate(){
   }
 }
 update();
+
+
+
 
 
