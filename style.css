@@ -18,3 +18,32 @@
     @keyframes fall { to { transform:translateY(110vh) rotate(720deg); opacity:.9; } }
     .phone-screen { background:linear-gradient(180deg,#f8fafc,#e0f2fe); }
 
+@media (max-width: 767px) {
+  html,
+  body {
+    min-height: 100%;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  #app,
+  #slides {
+    min-height: 100vh;
+    height: auto;
+    overflow: visible;
+  }
+
+  .slide {
+    min-height: 100vh;
+    height: auto;
+    align-items: flex-start;
+    overflow-y: auto;
+    padding-top: 5.5rem;
+    padding-bottom: 6.5rem;
+  }
+
+  .slide.active {
+    display: flex;
+  }
+}
